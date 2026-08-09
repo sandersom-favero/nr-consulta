@@ -1,4 +1,4 @@
-# NR Consulta — Normas Regulamentadoras
+# NR Consulta - Normas Regulamentadoras
 
 Aplicativo gratuito e de código aberto para facilitar a consulta e a leitura das **Normas Regulamentadoras (NRs) brasileiras** de Segurança e Saúde no Trabalho.
 
@@ -8,7 +8,7 @@ O **NR Consulta** foi desenvolvido para oferecer uma forma simples, rápida e ag
 
 ## 📱 Funcionalidades
 
-- Consulta às Normas Regulamentadoras vigentes;
+- Consulta às Normas Regulamentadoras vigentes em tempo real;
 - busca de NRs por número ou assunto;
 - pesquisa de palavras, itens e expressões dentro de cada norma;
 - interface responsiva para computadores, tablets e smartphones;
@@ -24,7 +24,7 @@ O **NR Consulta** foi desenvolvido para oferecer uma forma simples, rápida e ag
 
 ![Tela inicial do NR Consulta](screenshots/tela-inicial.png)
 
-### Visualização de uma NR
+### Download e processamento do arquivo PDF oficial
 
 ![Visualização de uma Norma Regulamentadora](screenshots/norma.png)
 
