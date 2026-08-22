@@ -16,7 +16,7 @@ O **NR Consulta** foi desenvolvido para oferecer uma forma simples, rápida e ag
 - controle do tamanho do texto;
 - navegação facilitada entre os itens da norma;
 - acesso ao texto das NRs em formato otimizado para leitura;
-- instalação como **Progressive Web App (PWA)**.
+- acesso aos números das Ementas de cada item das NRs.
 
 ## 🖼️ Capturas de tela
 
