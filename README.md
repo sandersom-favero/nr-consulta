@@ -60,7 +60,7 @@ O NR Consulta foi desenvolvido por **Sandersom Fávero**, em caráter pessoal e 
 
 Este repositório é destinado à distribuição do APK, à publicação da política de privacidade e à apresentação do aplicativo. O código-fonte não é distribuído publicamente.
 
-Componentes de terceiros incorporados ao aplicativo permanecem sujeitos às respectivas licenças.
+O NR Consulta utiliza bibliotecas e recursos de código aberto, como PDF.js, React, Next.js, Lucide e Atkinson Hyperlegible, sujeitos às respectivas licenças.
 
 Copyright © 2026 Sandersom Fávero. Todos os direitos reservados sobre o código e os elementos próprios do NR Consulta.
 
