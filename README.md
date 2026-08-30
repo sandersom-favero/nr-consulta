@@ -32,10 +32,6 @@ As associações entre itens, ementas e graus de infração são geradas automat
 
 ![Processamento de uma Norma Regulamentadora](screenshots/norma.png)
 
-### Leitura otimizada
-
-![Leitura de uma Norma Regulamentadora](screenshots/leitura.png)
-
 ## Download
 
 Baixe a versão mais recente do APK Android na página de [Releases](https://github.com/sandersom-favero/nr-consulta/releases/latest).
