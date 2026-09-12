@@ -18,6 +18,7 @@ O NR Consulta é um aplicativo gratuito para Android que facilita a localizaçã
 * ampliação de imagens com gesto de pinça;
 * temas claro e escuro;
 * controle persistente do tamanho do texto;
+* marcar itens e artigos como favoritos;
 * indicação de ementas e graus de infração da NR-28, quando aplicáveis.
 
 As associações entre itens, ementas e graus de infração são geradas automaticamente para fins informativos e podem conter falhas de processamento. Elas não constituem enquadramento de infração, interpretação normativa, orientação oficial, consultoria ou assessoria individualizada.
