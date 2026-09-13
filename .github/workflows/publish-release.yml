@@ -1,0 +1,41 @@
+name: Publicar versão do NR Consulta
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/publish-release.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obter arquivos do repositório
+        uses: actions/checkout@v4
+
+      - name: Verificar integridade do APK
+        run: |
+          echo "5f671d3a385bfba9bd65a87747f33992309686e7caeb189327da4e8d31318741  downloads/NR-Consulta-1.1.apk" | sha256sum --check -
+
+      - name: Publicar versão v1.1
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v1.1 >/dev/null 2>&1; then
+            gh release upload v1.1 \
+              downloads/NR-Consulta-1.1.apk \
+              downloads/NR-Consulta-1.1.sha256.txt \
+              --clobber
+          else
+            gh release create v1.1 \
+              downloads/NR-Consulta-1.1.apk \
+              downloads/NR-Consulta-1.1.sha256.txt \
+              --target main \
+              --title "NR Consulta 1.1" \
+              --notes-file RELEASE_NOTES_1.1.md
+          fi
