@@ -1,0 +1,8 @@
+NR Consulta 1.1 (versionCode 44)
+Pacote: br.com.sandersom.nrconsulta
+
+SHA-256 do arquivo APK:
+5f671d3a385bfba9bd65a87747f33992309686e7caeb189327da4e8d31318741  NR-Consulta-1.1.apk
+
+SHA-256 do certificado de assinatura do APK:
+C9:26:9A:52:0F:55:1C:0A:29:FE:A4:B1:B3:3C:CC:82:E5:BB:9C:A4:DC:E0:B4:E9:FE:47:F1:DE:5B:12:19:46
