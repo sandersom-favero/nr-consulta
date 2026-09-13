@@ -35,7 +35,9 @@ As associações entre itens, ementas e graus de infração são geradas automat
 
 ## Download
 
-Baixe a versão mais recente do APK Android na página de [Releases](https://github.com/sandersom-favero/nr-consulta/releases/latest).
+Baixe o APK Android assinado: **[NR Consulta 1.1](https://github.com/sandersom-favero/nr-consulta/raw/refs/heads/main/downloads/NR-Consulta-1.1.apk)**.
+
+Para conferir a integridade e a assinatura do arquivo, consulte o **[SHA-256 do APK e do certificado](downloads/NR-Consulta-1.1.sha256.txt)**.
 
 Dependendo das configurações do Android, poderá ser necessário autorizar temporariamente a instalação de aplicativos obtidos fora da loja oficial.
 
