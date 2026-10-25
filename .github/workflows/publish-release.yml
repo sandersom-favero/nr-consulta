@@ -6,10 +6,17 @@ on:
       - main
     paths:
       - .github/workflows/publish-release.yml
+      - downloads/NR-Consulta-1.2.apk
+      - downloads/NR-Consulta-1.2.sha256.txt
+      - RELEASE_NOTES_1.2.md
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: publicar-nr-consulta-v1.2
+  cancel-in-progress: false
 
 jobs:
   publish:
@@ -20,22 +27,21 @@ jobs:
 
       - name: Verificar integridade do APK
         run: |
-          echo "5f671d3a385bfba9bd65a87747f33992309686e7caeb189327da4e8d31318741  downloads/NR-Consulta-1.1.apk" | sha256sum --check -
+          echo "52f13b6e3a3d05d32c4562633f3230ed8f4ae7753fa783c905e46b70c184c585  downloads/NR-Consulta-1.2.apk" | sha256sum --check -
+          grep -Fx "52f13b6e3a3d05d32c4562633f3230ed8f4ae7753fa783c905e46b70c184c585  NR-Consulta-1.2.apk" downloads/NR-Consulta-1.2.sha256.txt
+          jarsigner -verify downloads/NR-Consulta-1.2.apk
 
-      - name: Publicar versão v1.1
+      - name: Publicar versão v1.2
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if gh release view v1.1 >/dev/null 2>&1; then
-            gh release upload v1.1 \
-              downloads/NR-Consulta-1.1.apk \
-              downloads/NR-Consulta-1.1.sha256.txt \
-              --clobber
-          else
-            gh release create v1.1 \
-              downloads/NR-Consulta-1.1.apk \
-              downloads/NR-Consulta-1.1.sha256.txt \
-              --target main \
-              --title "NR Consulta 1.1" \
-              --notes-file RELEASE_NOTES_1.1.md
+          if gh release view v1.2 >/dev/null 2>&1; then
+            echo "A versão v1.2 já existe. Os arquivos publicados serão preservados."
+            exit 0
           fi
+          gh release create v1.2 \
+            downloads/NR-Consulta-1.2.apk \
+            downloads/NR-Consulta-1.2.sha256.txt \
+            --target "$GITHUB_SHA" \
+            --title "NR Consulta 1.2" \
+            --notes-file RELEASE_NOTES_1.2.md
