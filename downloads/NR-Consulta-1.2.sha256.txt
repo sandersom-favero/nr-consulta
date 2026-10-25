@@ -1,0 +1,8 @@
+NR Consulta 1.2 (versionCode 53)
+Pacote: br.com.sandersom.nrconsulta
+
+SHA-256 do arquivo APK:
+52f13b6e3a3d05d32c4562633f3230ed8f4ae7753fa783c905e46b70c184c585  NR-Consulta-1.2.apk
+
+SHA-256 do certificado de assinatura do APK:
+C9:26:9A:52:0F:55:1C:0A:29:FE:A4:B1:B3:3C:CC:82:E5:BB:9C:A4:DC:E0:B4:E9:FE:47:F1:DE:5B:12:19:46
